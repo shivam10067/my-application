@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/r5"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+  <EditText
+      android:id="@+id/search_product_name"
+      android:layout_width="290dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="8dp"
+      android:background="#F5F2F8"
+      android:layout_marginBottom="7dp"
+      android:layout_marginStart="5dp"
+      android:layout_centerVertical="true"
+      android:padding="12dp"
+      android:textStyle="bold"
+      android:textSize="19dp"
+      android:hint="Product Name"
+      android:textColorHint="#E91E63"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FBFBF5"
+            android:id="@+id/search_btn"
+            android:background="#E91E63"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="9dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="search"
+            android:layout_toRightOf="@+id/search_product_name"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_list"
+        android:layout_below="@id/r5">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
